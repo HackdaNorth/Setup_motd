@@ -10,7 +10,7 @@ fi
 apt update -y
 
 # Install dependencies
-apt install -y curl wget fontconfig neofetch
+apt install -y curl wget fontconfig neofetch unzip
 
 # Install Oh My Posh
 su -c "curl -s https://ohmyposh.dev/install.sh | bash -s" $SUDO_USER
