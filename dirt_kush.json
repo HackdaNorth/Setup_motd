@@ -35,6 +35,14 @@
           "foreground": "#011627",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
+          "template": " \uf489 {{ .UserName }} ",
+          "type": "shell"
+        },
+        {
+          "background": "#E68B14",
+          "foreground": "#011627",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
           "template": " \uf489 {{ .Name }} ",
           "type": "shell"
         },
@@ -82,7 +90,7 @@
           "template": " \ue7a8 {{ .Full }} "
         },
         {
-          "background": "#1BD4CD",
+          "background": "#00C760",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#16B1AC{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#16B1AC{{ end }}",
@@ -109,7 +117,7 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#03DED3",
+          "background": "#00BB5B",
           "background_templates": [
             "{{ if gt .Code 0 }}#E44141{{ end }}"
           ],
@@ -181,13 +189,13 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#D6DEEB",
+          "foreground": "#92E9BC",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
         },
         {
-          "foreground": "#D6DEEB",
+          "foreground": "#92E9BC",
           "properties": {
             "always_enabled": true
           },
