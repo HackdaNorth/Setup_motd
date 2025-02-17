@@ -31,7 +31,7 @@
           "type": "os"
         },
         {
-          "background": "#2C945E",
+          "background": "#8390FA",
           "foreground": "#011627",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
@@ -39,7 +39,7 @@
           "type": "shell"
         },
         {
-          "background": "#E68B14",
+          "background": "#2C945E",
           "foreground": "#011627",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
