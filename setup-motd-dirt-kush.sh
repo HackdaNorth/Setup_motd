@@ -16,7 +16,7 @@ apt install -y curl wget fontconfig neofetch unzip
 su -c "curl -s https://ohmyposh.dev/install.sh | bash -s" $SUDO_USER
 
 # Download Oh My Posh theme
-su -c "wget -q https://raw.githubusercontent.com/HackdaNorth/Setup_motd/refs/heads/main/Dirt_kush.json -O ~/dirt_kush.omp.json" $SUDO_USER
+su -c "wget -q https://raw.githubusercontent.com/HackdaNorth/Setup_motd/refs/heads/main/dirt_kush.json -O ~/dirt_kush.omp.json" $SUDO_USER
 
 # Set up Oh My Posh in .profile
 su -c "echo 'eval \"\$(oh-my-posh init bash --config ~/dirt_kush.omp.json)\"' >> ~/.profile" $SUDO_USER
