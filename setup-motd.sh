@@ -16,20 +16,20 @@ apt install -y curl wget fontconfig neofetch
 su -c "curl -s https://ohmyposh.dev/install.sh | bash -s" $SUDO_USER
 
 # Download Oh My Posh theme
-su -c "wget -q https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/powerlevel10k_rainbow.omp.json -O ~/froczh.omp.json" $SUDO_USER
+su -c "wget -q https://raw.githubusercontent.com/HackdaNorth/Setup_motd/refs/heads/main/Dirt_Raft -O ~/dirt_raft.omp.json" $SUDO_USER
 
 # Set up Oh My Posh in .profile
-su -c "echo 'eval \"\$(oh-my-posh init bash --config ~/froczh.omp.json)\"' >> ~/.profile" $SUDO_USER
+su -c "echo 'eval \"\$(oh-my-posh init bash --config ~/dirt_raft.omp.json)\"' >> ~/.profile" $SUDO_USER
 
 # Download Neofetch theme and apply it
-wget -q https://raw.githubusercontent.com/chick2d/neofetch-themes/refs/heads/main/normal/config2.conf -O /tmp/config2.conf
+wget -q https://raw.githubusercontent.com/HackdaNorth/Setup_motd/refs/heads/main/chick2d.conf -O /tmp/config2.conf
 mkdir -p /home/$SUDO_USER/.config/neofetch
 rm -f /home/$SUDO_USER/.config/neofetch/config.conf
 mv /tmp/config2.conf /home/$SUDO_USER/.config/neofetch/config.conf
 chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/neofetch
 
 # Download Neofetch ASCII art
-wget -q https://raw.githubusercontent.com/blyxyas/uwu-neofetch-art/refs/heads/main/colored/sailor-moon-cat.txt -O /home/$SUDO_USER/.config/neofetch/logo
+wget -q https://raw.githubusercontent.com/HackdaNorth/Setup_motd/refs/heads/main/logo -O /home/$SUDO_USER/.config/neofetch/logo
 chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/neofetch/logo
 
 # Set up Neofetch in profile script
